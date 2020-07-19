@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 50px;
+    background-color: darkgray;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 400px;
+    width: 440px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.header .svg{
+    height: 23px;
+    width: 23px;
+    margin-left: 10px;
+}
+
+.body {
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.body > h3 {
+    margin: 10px;
+}
+
+.body h3 {
+    font-weight: 500;
+}
+
+.student_data_container {
+    margin: 5px;
+}
+
+.barContainer {
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.loadingBar {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 5px 20px;
+    width: 400px;
+    height: 50px;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    transition: all 1s ease-out;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.loading {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.studentName {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.studentSPI {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.textShadow {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+.otherStatistics {
+    display: flex;
+    flex-flow: row;
+}
+
+.statistic {
+    font-size: 12px;
+    margin: 5px 20px;
+    font-weight: 300;
+}
+
+.studentThree {
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+
+.studentTwo {
+    background: linear-gradient(45deg, #fad0c4 0%, #fad0c4 99%, #ffd1ff 100%);
+}
+
+.studentOne {
+    background: linear-gradient(45deg, #f6d365 0%, #fad0c4 99%, #fda085 100%);
+}
+
+#one {
+    width: 180px;
+}
+
+#two {
+    width: 200px;
+}
+
+#three {
+    width: 330px;
+}
